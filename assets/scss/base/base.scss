@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+@include font-face('Roboto-Regular', Roboto-Regular);
+
 html {
     font-size: 62.5%;
     @include mq('xsmall'){
@@ -19,7 +21,7 @@ html {
 }
 
 body {
-    font: 1.6rem Arial, Helvetica, sans-serif;
+    font: 1.6rem/1.5rem 'Roboto-Regular', sans-serif;
     color: #fff;
 }
 

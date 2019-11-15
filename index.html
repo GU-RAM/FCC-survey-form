@@ -19,6 +19,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-md-7 col-lg-6 m-auto">
+
                 <form class="my-5" action="" method="post" id="survey-form">
 
                     <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -26,12 +27,12 @@
 
                     <fieldset class="p-5">
                         <label for="name" id="name-label">Name</label><br>
-                        <input type="text" name="user_name" id="name" placeholder="name"><br>
+                        <input type="text" name="user_name" id="name" placeholder="Enter your name"><br>
 
                         <label for="email" id="email-label">Email</label><br>
                         <input type="email" name="user_email" id="email" placeholder="Enter your Email" required><br>
 
-                        <label for="age" id="number-label">Age</label><br>
+                        <label for="age" id="number-label">Age (optional)</label><br>
                         <input type="number" name="user_age" id="age" min='18' max='65' placeholder="Age"><br>
 
                         <label for="dropdown">Which option best describes your current role?</label><br>
@@ -46,39 +47,39 @@
                         </select><br>
 
                         <label>Would you recommend freeCodeCamp to a friend?</label><br>
-                        <input type="radio" name="user_recommendation" id="Definitely"><label for="Definitely">Definitely</label><br>
-                        <input type="radio" name="user_recommendation" id="Maybe"><label for="Maybe">Maybe</label><br>
-                        <input type="radio" name="user_recommendation" id="Not sure"><label for="Not sure">Not sure</label><br>
+                        <input type="radio" name="user_friends" value="Definitely" id="Definitely"><label for="Definitely">Definitely</label><br>
+                        <input type="radio" name="user_friends" value="Maybe" id="Maybe"><label for="Maybe">Maybe</label><br>
+                        <input type="radio" name="user_friends" value="Not sure" id="Not sure"><label for="Not sure">Not sure</label><br>
 
                         <label for="favorite feature"  class="mt-4">What is your favorite feature of freeCodeCamp?</label>
                         <select name="user_favorite_feature" id="favorite_feature">
-                            <optgroup label="Select an option">
+                                <option disabled selected value>Select an option</option>
                                 <option value="Challanges">Challanges</option>
                                 <option value="Projects">Projects</option>
                                 <option value="Community">Community</option>
                                 <option value="Open Source">Open Source</option>
-                            </optgroup>
                         </select><br>
 
                         <label >What would you like to see improved? (Check all that apply)</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Front-end Projects"><label for="Front-end Projects">Front-end Projects</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Back-end Projects"><label for="Back-end Projects">Back-end Projects</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Data Visualization"><label for="Data Visualization">Data Visualization</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Challenges"><label for="Challenges">Challenges</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Open Source Community"><label for="Open Source Community">Open Source Community</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Gitter help rooms"><label for="Gitter help rooms">Gitter help rooms</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Videos"><label for="Videos">Videos</label><br>
-                        <input type="checkbox" name="user_recommendation" id="City Meetups"><label for="City Meetups">City Meetups</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Wiki"><label for="Wiki">Wiki</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Forum"><label for="Forum"> Forum</label><br>
-                        <input type="checkbox" name="user_recommendation" id="Additional Courses"><label for="Additional Courses">Additional Courses</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Front-end Projects' id="Front-end Projects"><label for="Front-end Projects">Front-end Projects</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Back-end Projects' id="Back-end Projects"><label for="Back-end Projects">Back-end Projects</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Data Visualization' id="Data Visualization"><label for="Data Visualization">Data Visualization</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Challenges' id="Challenges"><label for="Challenges">Challenges</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Open Source Community' id="Open Source Community"><label for="Open Source Community">Open Source Community</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Gitter help rooms' id="Gitter help rooms"><label for="Gitter help rooms">Gitter help rooms</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Videos' id="Videos"><label for="Videos">Videos</label><br>
+                        <input type="checkbox" name="user_recommendation" value='City Meetups' id="City Meetups"><label for="City Meetups">City Meetups</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Wiki' id="Wiki"><label for="Wiki">Wiki</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Forum' id="Forum"><label for="Forum"> Forum</label><br>
+                        <input type="checkbox" name="user_recommendation" value='Additional Courses' id="Additional Courses"><label for="Additional Courses">Additional Courses</label><br>
 
                         <label for="comments_suggestions"  class="mt-4">Any comments or suggestions?</label><br>
-                        <textarea name="textarea    " id="comments_suggestions" cols="50" rows="5" placeholder="Enter your comment here"></textarea>
+                        <textarea name="textarea    " id="comments_suggestions" cols="50" rows="5" placeholder="Enter your comment here..."></textarea>
 
                         <button type="submit" id='submit'>Sumbit</button>
                     </fieldset>
                 </form>
+
             </div>
         </div>
     </div>
