@@ -1,0 +1,16 @@
+#name, #email, #age, #dropdown, #favorite_feature, #comments_suggestions {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: text-bottom;
+}
+
