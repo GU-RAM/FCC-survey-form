@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-#name, #email, #age, #dropdown, #favorite_feature {
+#name, #email, #number, #dropdown, #favorite_feature {
     width: 100%;
     margin-bottom: 2rem;
     height: 3.5rem;
@@ -24,7 +24,7 @@ fieldset {
 
 input[type='radio'],
 input[type="checkbox"] {
-    margin-right: 5px;
+    margin-right: 5px; 
     width: 1.6rem;
     height: 1.6rem;
     vertical-align: text-bottom;

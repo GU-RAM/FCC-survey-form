@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,13 +12,15 @@
     <!-- css -->
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <!-- Freecodecamp js -->
    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
     <title>Survay form</title>
 </head>
 <body>
     <div class="bg-image"></div>
     <div class="container">
-        <div class="row">
+        <div class="row"> 
             <div class="col-sm-8 col-md-7 col-lg-6 m-auto">
 
                 <form class="my-5" action="" method="post" id="survey-form">
@@ -27,13 +30,13 @@
 
                     <fieldset class="p-5">
                         <label for="name" id="name-label">Name</label><br>
-                        <input type="text" name="user_name" id="name" placeholder="Enter your name"><br>
+                        <input type="text" name="user_name" id="name" placeholder="Enter your name" required><br>
 
                         <label for="email" id="email-label">Email</label><br>
                         <input type="email" name="user_email" id="email" placeholder="Enter your Email" required><br>
 
                         <label for="age" id="number-label">Age (optional)</label><br>
-                        <input type="number" name="user_age" id="age" min='18' max='65' placeholder="Age"><br>
+                        <input type="number" name="user_age" id="number" min='18' max='65' placeholder="Age"><br>
 
                         <label for="dropdown">Which option best describes your current role?</label><br>
                         <select name="user_role" id="dropdown">

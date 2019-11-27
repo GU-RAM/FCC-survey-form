@@ -43,7 +43,7 @@ body {
 #description, #title {
   text-align: center; }
 
-#name, #email, #age, #dropdown, #favorite_feature {
+#name, #email, #number, #dropdown, #favorite_feature {
   width: 100%;
   margin-bottom: 2rem;
   height: 3.5rem; }
